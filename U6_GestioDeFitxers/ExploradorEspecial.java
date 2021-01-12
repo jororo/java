@@ -34,6 +34,7 @@ public class ExploradorEspecial {
         while (executar) {
             System.out.print(rutaActual.getAbsolutePath() + "> ");
             String ordre = lector.nextLine();
+            //split divide en dos el texto introducido separado por espacio en una array
             String[] comandes = ordre.split(" ", 2);
             if (comandes.length == 1) {
                 //Pot ser un "dir" o "fi"
